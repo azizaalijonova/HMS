@@ -1,0 +1,266 @@
+.about-1 {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+h3 {
+  font-size: 5rem;
+}
+.about-2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  button {
+    width: 10.5rem;
+    a {
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+/* Services swiper */
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #000;
+  font-weight: bold;
+}
+
+.swiper-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-title {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Pagination styles */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #a29bfe;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+  border: 2px solid #a29bfe;
+  transform: scale(1.2);
+}
+.doctors,
+.service > .container,
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+}
+
+.services-items {
+  display: flex;
+  gap: 3rem;
+}
+.doctors-items {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.doctor-item {
+  display: flex;
+  gap: 8px;
+}
+
+.doctor-img {
+  width: 10.7rem;
+  height: 10.7rem;
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    color: #817697;
+    font-size: 1.2rem;
+  }
+}
+.message {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.message h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.message .container {
+  position: relative;
+}
+
+.message form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Make the textarea span full width */
+.message .textarea {
+  grid-column: 1 / -1;
+  height: 120px;
+  resize: none;
+  padding: 1rem;
+}
+.textarea::placeholder {
+  color: #9ca3af;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Style all inputs */
+.message input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 5px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Add the decorative background shape */
+.message::after {
+  content: "";
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  width: 400px;
+  height: 400px;
+  background-color: #e8f0ff;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(-15deg);
+}
+
+/* Focus state for inputs */
+.message input:focus {
+  outline: none;
+  border-color: #8b7fd3;
+}
+
+/* Placeholder styling */
+.message input::placeholder {
+  color: #9ca3af;
+}
+
+/* Make it responsive
+@media (max-width: 640px) {
+  .message form {
+    grid-template-columns: 1fr;
+  }
+
+  .message::after {
+    width: 300px;
+    height: 300px;
+    right: -150px;
+    bottom: -150px;
+  }
+} */

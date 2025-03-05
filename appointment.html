@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/basic.css" />
+    <link rel="stylesheet" href="./styles/appointment.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <!-- <img src="./images/sticker.svg" alt="sticker" class="sticker" /> -->
+    <header class="">
+      <nav class="container">
+        <div class="top-logo">
+          <h1>HMS</h1>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a href="./landing.html">Home</a>
+          </li>
+          <li><a href="./appointment.html">Appointment</a></li>
+          <li><a href="./landing.html">Services</a></li>
+          <li><a href="./about_us.html">About Us</a></li>
+          <li><a href="./landing.html">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="btn btn1" onclick="window.location.href='signUp.html'">
+            Sign In
+          </button>
+          <button
+            class="btn btn2"
+            onclick="window.location.href='appointment.html'"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-1">
+          <h1>We help people to get appointment in online</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            eveniet magnam obcaecati numquam blanditiis ea animi fugiat esse
+            labore aliquid. Veniam, perferendis ducimus necessitatibus optio
+            labore qui illum error nobis excepturi magni! Tenetur veritatis
+            temporibus ullam harum!
+          </p>
+          <button class="btn btn2">Tour</button>
+        </div>
+        <div class="hero-2">
+          <img src="./images/chuvak1.svg" alt="boy's image" class="chuvak1" />
+          <img src="./images/chuvak2.svg" alt="boy's image" class="chuvak2" />
+        </div>
+      </div>
+    </section>
+
+    <form action="" class="appointment">
+      <div class="container">
+        <h3>Appointment</h3>
+        <div class="inputs">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Mobile Number" />
+          <input type="text" placeholder="NIC" />
+          <input type="date" placeholder="Date of Birth" />
+          <select name="gender" id="gender">
+            <option value="" disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="date" placeholder="Appointment Date" />
+          <input type="time" placeholder="Appointment Time" />
+          <select name="dept" id="dept">
+            <option value="" disabled selected>Department Name</option>
+            <!-- Add your department options here -->
+          </select>
+          <input type="text" placeholder="Doctor Name" />
+          <input type="text" placeholder="Address" />
+        </div>
+
+        <button class="btn btn2">Register</button>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <span></span>
+        <div class="footer-elements">
+          <div class="top-logo">
+            <h1>HMS</h1>
+          </div>
+          <div class="footer-item links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Appointment</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-item hours">
+            <h5>Hours</h5>
+            <div class="hours-items">
+              <ul>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+              </ul>
+              <ul>
+                <li>9:00-18:00</li>
+                <li>9:00-18:00</li>
+                <li>9:00-18:00</li>
+                <li>9:00-18:00</li>
+                <li>9:00-18:00</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h5>Contact</h5>
+            <ul class="contact-items">
+              <li>
+                <img src="./images/icons/phone.svg" alt="" class="footer-img" />
+                <p>000-000-000</p>
+              </li>
+              <li>
+                <img src="./images/icons/mail.svg" alt="" class="footer-img" />
+                <p>info@gmail.com</p>
+              </li>
+              <li>
+                <img
+                  src="./images/icons/location.svg"
+                  alt=""
+                  class="footer-img"
+                />
+                <p>Movarounnahr 1, Mirzo Ulug'bek</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

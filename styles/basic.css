@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: "Inter", serif; */
+/* font-family: "Mali", serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  scroll-behavior: smooth;
+  font-family: "Inter", serif;
+}
+
+/* .stciker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 75rem;
+  height: 70rem;
+} */
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 8rem;
+  background-color: white;
+  z-index: 10;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.top-logo {
+  h1 {
+    font-family: "Mali", serif;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #45a2c3;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+
+  li {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    a {
+      display: inline-block;
+      color: black;
+
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+      padding: 5px;
+    }
+  }
+}
+
+.nav-links > li:hover,
+.nav-links > li:active {
+  background: linear-gradient(
+    180deg,
+    #c5dcff 0%,
+    rgba(197, 220, 255, 0.5) 96.88%,
+    rgba(196, 196, 196, 0) 100%
+  );
+}
+
+.header-actions {
+  display: flex;
+  gap: 2.8rem;
+  z-index: 999;
+}
+.btn {
+  display: flex;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  box-shadow: 2px 5px 4px 0px #c7c7c740;
+  cursor: pointer;
+}
+
+.btn1 {
+  background: linear-gradient(
+    180deg,
+    #c5dcff 0%,
+    rgba(197, 220, 255, 0.5) 96.87%,
+    rgba(196, 196, 196, 0) 100%
+  );
+}
+
+.btn2 {
+  background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
+  color: white;
+}
+
+.hero > .container,
+.about > .container,
+.doctors,
+.appointment > .container,
+footer > .container {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 8rem;
+}
+
+.hero-1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  flex-direction: column;
+  gap: 4.5rem;
+
+  h1 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  button {
+    width: 7.5rem;
+  }
+}
+
+.hero-2 {
+  width: 50%;
+  display: flex;
+  position: absolute;
+  img {
+    width: 50rem;
+    height: 50rem;
+    position: relative;
+  }
+}
+
+.chuvak1 {
+  left: 50rem;
+}
+
+.chuvak2 {
+  left: 30rem;
+}
+
+footer > .container {
+  flex-direction: column;
+
+  span {
+    border: 2px solid #00000080;
+    width: 100%;
+  }
+}
+
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #000000a6;
+    font-size: 1rem;
+  }
+}
+
+.links > ul > li > a {
+  color: #000000a6;
+  font-size: 1rem;
+}
+
+.hours-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-items > li {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-img {
+  width: 2rem;
+  height: 2rem;
+}
