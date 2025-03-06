@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const services = [
-    { name: "NEUROSCIENCES", image: "./images/services.svg" },
-    { name: "CARDIOLOGY", image: "./images/services.svg" },
-    { name: "ORTHOPEDICS", image: "./images/services.svg" },
-    { name: "DERMATOLOGY", image: "./images/services.svg" },
-    { name: "PEDIATRICS", image: "./images/services.svg" },
-    { name: "GYNECOLOGY", image: "./images/services.svg" },
-    { name: "UROLOGY", image: "./images/services.svg" },
-    { name: "DENTISTRY", image: "./images/services.svg" },
-    { name: "GASTROENTEROLOGY", image: "./images/services.svg" },
+    { name: "NEUROSCIENCES", image: "../images/services.svg" },
+    { name: "CARDIOLOGY", image: "../images/services.svg" },
+    { name: "ORTHOPEDICS", image: "../images/services.svg" },
+    // { name: "DERMATOLOGY", image: "../images/services.svg" },
+    // { name: "PEDIATRICS", image: "../images/services.svg" },
+    // { name: "GYNECOLOGY", image: "../images/services.svg" },
+    // { name: "UROLOGY", image: "../images/services.svg" },
+    // { name: "DENTISTRY", image: "../images/services.svg" },
+    // { name: "GASTROENTEROLOGY", image: "../images/services.svg" },
   ];
 
   const swiperWrapper = document.querySelector(".swiper-wrapper");
