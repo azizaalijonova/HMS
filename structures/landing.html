@@ -6,7 +6,12 @@
 
     <link rel="stylesheet" href="../styles/basic.css" />
     <link rel="stylesheet" href="../styles/landing.css" />
-    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>Hospital Management System</title>
   </head>
   <body>
     <!-- Header section -->
@@ -99,9 +104,32 @@
     <section class="services" id="services">
       <div class="container">
         <h2>Our Services</h2>
-        <div class="swiper mySwiper">
+        <div class="swiper">
           <div class="swiper-wrapper">
-            <!-- Slides will be added dynamically -->
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-image">
+                  <img src="../images/services.svg" alt="Neurosciences" />
+                </div>
+                <h3>NEUROSCIENCES</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-image">
+                  <img src="../images/services.svg" alt="Neurosciences" />
+                </div>
+                <h3>NEUROSCIENCES</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="service-image">
+                  <img src="../images/services.svg" alt="Neurosciences" />
+                </div>
+                <h3>NEUROSCIENCES</h3>
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -303,7 +331,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../script.js"></script>
   </body>
 </html>
