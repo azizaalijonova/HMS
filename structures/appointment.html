@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/basic.css" />
-    <link rel="stylesheet" href="./styles/signUp.css" />
+    <link rel="stylesheet" href="./styles/appointment.css" />
     <title>Document</title>
   </head>
   <body>
@@ -61,51 +61,35 @@
       </div>
     </section>
 
-    <section class="signup">
+    <form action="" class="appointment">
       <div class="container">
-        <div class="signup-header">
-          <div class="header-text">
-            <h1>Sign Up</h1>
-            <h2>Please Sign Up To Continue</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since.
-            </p>
-          </div>
-          <div class="toggle-buttons">
-            <button class="toggle-btn active">Patient</button>
-            <button class="toggle-btn">Doctor</button>
-            <button class="toggle-btn">Admin</button>
-          </div>
+        <h3>Appointment</h3>
+        <div class="inputs">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Mobile Number" />
+          <input type="text" placeholder="NIC" />
+          <input type="date" placeholder="Date of Birth" />
+          <select name="gender" id="gender">
+            <option value="" disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="date" placeholder="Appointment Date" />
+          <input type="time" placeholder="Appointment Time" />
+          <select name="dept" id="dept">
+            <option value="" disabled selected>Department Name</option>
+            <!-- Add your department options here -->
+          </select>
+          <input type="text" placeholder="Doctor Name" />
+          <input type="text" placeholder="Address" />
         </div>
 
-        <form class="signup-form">
-          <div class="form-grid">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="email" placeholder="Email" />
-            <input type="tel" placeholder="Mobile Number" />
-            <input type="text" placeholder="NIC" />
-            <input type="date" placeholder="Date of Birth" />
-            <textarea placeholder="Address" class="address-input"></textarea>
-
-            <div class="password-row">
-              <select name="gender" id="gender">
-                <option value="" disabled selected>Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-              <input type="password" placeholder="Password" />
-              <input type="password" placeholder="Confirm Password" />
-            </div>
-          </div>
-
-          <button type="submit" class="register-btn">Register</button>
-        </form>
+        <button class="btn btn2">Register</button>
       </div>
-    </section>
+    </form>
 
     <!-- Footer -->
     <footer class="footer" id="footer">
@@ -118,13 +102,11 @@
           <div class="footer-item links">
             <h5>Quick Links</h5>
             <ul>
-              <li>
-                <a href="./landing.html">Home</a>
-              </li>
+              <li><a href="#home">Home</a></li>
               <li><a href="./appointment.html">Appointment</a></li>
-              <li><a href="./landing.html">Services</a></li>
+              <li><a href="#services">Service</a></li>
               <li><a href="./about_us.html">About Us</a></li>
-              <li><a href="./landing.html">Contact Us</a></li>
+              <li><a href="#message">Contact Us</a></li>
             </ul>
           </div>
           <div class="footer-item hours">
