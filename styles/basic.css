@@ -122,7 +122,8 @@ header {
 .about > .container,
 .doctors,
 .appointment > .container,
-footer > .container {
+footer > .container,
+.signup > .container {
   display: flex;
   gap: 2rem;
   padding-top: 3rem;
@@ -203,6 +204,10 @@ footer > .container {
 .links > ul > li > a {
   color: #000000a6;
   font-size: 1rem;
+}
+
+.links > ul > li > a:hover {
+  color: black;
 }
 
 .hours-items {

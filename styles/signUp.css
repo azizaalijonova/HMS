@@ -1,9 +1,6 @@
-.signup-container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+.signup > .container {
+  flex-direction: column;
 }
-
 .signup-header {
   display: flex;
   justify-content: space-between;
@@ -13,15 +10,16 @@
 
 .header-text h1 {
   font-size: 36px;
-  color: #333;
+  color: #00000080;
   margin: 0 0 10px 0;
+  font-weight: 800;
 }
 
 .header-text h2 {
   font-size: 24px;
-  color: #666;
+  color: #00000080;
   margin: 0 0 15px 0;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 .header-text p {
@@ -103,7 +101,6 @@ select {
 /* Style for date input */
 input[type="date"] {
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3e%3c/rect%3e%3cline x1='16' y1='2' x2='16' y2='6'%3e%3c/line%3e%3cline x1='8' y1='2' x2='8' y2='6'%3e%3c/line%3e%3cline x1='3' y1='10' x2='21' y2='10'%3e%3c/line%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 1.2em;
