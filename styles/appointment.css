@@ -13,52 +13,44 @@
 
 .inputs {
   display: grid;
-  grid-template-columns: repeat(
-    6,
-    1fr
-  ); /* Create 6 columns to allow for 2 or 3 items per row */
-  gap: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
   width: 100%;
 }
 
-/* Default two-column spans */
 .inputs > * {
-  grid-column: span 3; /* By default, items take up 3 columns (half the row) */
+  grid-column: span 3;
 }
 
-/* Three-column row items */
 .inputs select[name="gender"] {
-  grid-column: span 2; /* Take up 2 of 6 columns */
+  grid-column: span 2;
 }
 
 .inputs input[type="date"][placeholder="Appointment Date"] {
-  grid-column: span 2; /* Take up 2 of 6 columns */
+  grid-column: span 2;
 }
 
 .inputs input[type="time"] {
-  grid-column: span 2; /* Take up 2 of 6 columns */
+  grid-column: span 2;
 }
 
-/* Full-width address field */
 .inputs input[placeholder="Address"] {
-  grid-column: 1 / -1; /* Span all columns */
-  height: 80px;
+  grid-column: 1 / -1;
+  height: 8rem;
 }
 
-/* Style all inputs and selects */
 .inputs input,
 .inputs select {
   width: 100%;
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   border: 5px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #333;
   background-color: white;
   box-sizing: border-box;
 }
 
-/* Style for select elements */
 .inputs select {
   appearance: none;
   background-repeat: no-repeat;
@@ -66,22 +58,19 @@
   background-size: 1em;
 }
 
-/* Style for date inputs */
 .inputs input[type="date"] {
   appearance: none;
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right 1rem center;
   background-size: 1.2em;
 }
 
-/* Focus state */
 .inputs input:focus,
 .inputs select:focus {
   outline: none;
   border-color: #6b7280;
 }
 
-/* Placeholder styling */
 ::placeholder {
   color: #9ca3af;
 }
