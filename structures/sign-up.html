@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/basic.css" />
-    <link rel="stylesheet" href="../styles/appointment.css" />
+    <link rel="stylesheet" href="../styles/sign-up.css" />
     <title>Document</title>
   </head>
   <body>
@@ -20,21 +20,24 @@
           <li>
             <a href="./landing.html">Home</a>
           </li>
-          <li><a href="./appointment.html">Appointment</a></li>
+          <li><a href="./sign-up.html">Appointment</a></li>
           <li><a href="./landing.html">Services</a></li>
           <li><a href="./about_us.html">About Us</a></li>
           <li><a href="./landing.html">Contact Us</a></li>
         </ul>
 
         <div class="header-actions">
-          <button class="btn btn1" onclick="window.location.href='signUp.html'">
+          <button
+            class="btn btn1"
+            onclick="window.location.href='sign-in.html'"
+          >
             Sign In
           </button>
           <button
             class="btn btn2"
-            onclick="window.location.href='appointment.html'"
+            onclick="window.location.href='sign-up.html'"
           >
-            Register
+            Sign Up
           </button>
         </div>
       </nav>
@@ -61,38 +64,59 @@
       </div>
     </section>
 
-    <!-- Appointment form -->
-    <form action="" class="appointment">
+    <section class="signup">
       <div class="container">
-        <h3>Appointment</h3>
-        <div class="inputs">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Mobile Number" />
-          <input type="text" placeholder="NIC" />
-          <input type="date" placeholder="Date of Birth" />
+        <div class="signup-header">
+          <div class="header-text">
+            <h1>Sign Up</h1>
+            <h2>Please Sign Up To Continue</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since.
+            </p>
+          </div>
+          <div class="toggle-buttons">
+            <button class="toggle-btn active">Patient</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Appointment form -->
+    <form class="signup-form container">
+      <div class="form-grid">
+        <input id="firstname" type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Mobile Number" />
+
+        <input type="date" placeholder="" />
+        <select name="blood" id="blood">
+          <option value="" disabled selected>Blood group</option>
+          <option value="male">A_POSITIVE</option>
+          <option value="female">A_NEGATIVE</option>
+          <option value="other">B_POSITIVE</option>
+          <option value="other">B_NEGATIVE</option>
+          <option value="other">AB_POSITIVE</option>
+          <option value="other">AB_NEGATIVE</option>
+          <option value="other">O_POSITIVE</option>
+          <option value="other">O_NEGATIVE</option>
+        </select>
+        <textarea placeholder="Address" class="address-input"></textarea>
+
+        <div class="password-row">
           <select name="gender" id="gender">
             <option value="" disabled selected>Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
-          <input type="date" placeholder="Appointment Date" />
-          <input type="time" placeholder="Appointment Time" />
-          <select name="dept" id="dept">
-            <option value="" disabled selected>Department Name</option>
-            <option value="cardiology">Cardiology</option>
-            <option value="neurology">Neurology</option>
-            <option value="gynecology">Gynecology</option>
-            <option value="orthopedics">Orthopedics</option>
-          </select>
-          <input type="text" placeholder="Doctor Name" />
-          <input type="text" placeholder="Address" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
         </div>
-
-        <button class="btn btn2">Register</button>
       </div>
+
+      <button type="submit" class="register-btn">Register</button>
     </form>
 
     <!-- Footer -->
@@ -107,7 +131,7 @@
             <h5>Quick Links</h5>
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="./appointment.html">Appointment</a></li>
+              <li><a href="./sign-up.html">Appointment</a></li>
               <li><a href="#services">Service</a></li>
               <li><a href="./about_us.html">About Us</a></li>
               <li><a href="#message">Contact Us</a></li>
