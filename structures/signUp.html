@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/basic.css" />
-    <link rel="stylesheet" href="../styles/signin.css" />
+    <link rel="stylesheet" href="../styles/signUp.css" />
     <title>HMS</title>
   </head>
   <body>
@@ -20,23 +20,17 @@
           <li>
             <a href="./landing.html">Home</a>
           </li>
-          <li><a href="./sign-up.html">Appointment</a></li>
+          <li><a href="./signUp.html">Appointment</a></li>
           <li><a href="./landing.html">Services</a></li>
-          <li><a href="./about_us.html">About Us</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
           <li><a href="./landing.html">Contact Us</a></li>
         </ul>
 
         <div class="header-actions">
-          <button
-            class="btn btn1"
-            onclick="window.location.href='sign-in.html'"
-          >
+          <button class="btn btn1" onclick="window.location.href='signIn.html'">
             Sign In
           </button>
-          <button
-            class="btn btn2"
-            onclick="window.location.href='sign-up.html'"
-          >
+          <button class="btn btn2" onclick="window.location.href='signUp.html'">
             Sign Up
           </button>
         </div>
@@ -64,12 +58,12 @@
       </div>
     </section>
 
-    <section class="signin">
+    <section class="signup">
       <div class="container">
-        <div class="signin-header">
+        <div class="signup-header">
           <div class="header-text">
-            <h1>Sign In</h1>
-            <h2>Please Sign In To Continue</h2>
+            <h1>Sign Up</h1>
+            <h2>Please Sign Up To Continue</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -80,14 +74,45 @@
             <button class="toggle-btn active">Patient</button>
           </div>
         </div>
-        <form class="signin-form">
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-
-          <button type="submit" class="register-btn">Sign in</button>
-        </form>
       </div>
     </section>
+    <!-- Appointment form -->
+    <form class="signup-form container">
+      <div class="form-grid">
+        <input id="firstname" type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Mobile Number" />
+
+        <input type="date" placeholder="" />
+        <select name="blood" id="blood">
+          <option value="" disabled selected>Blood group</option>
+          <option value="male">A_POSITIVE</option>
+          <option value="female">A_NEGATIVE</option>
+          <option value="other">B_POSITIVE</option>
+          <option value="other">B_NEGATIVE</option>
+          <option value="other">AB_POSITIVE</option>
+          <option value="other">AB_NEGATIVE</option>
+          <option value="other">O_POSITIVE</option>
+          <option value="other">O_NEGATIVE</option>
+        </select>
+        <textarea placeholder="Address" class="address-input"></textarea>
+
+        <div class="password-row">
+          <select name="gender" id="gender">
+            <option value="" disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
+        </div>
+      </div>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
     <!-- Footer -->
     <footer class="footer" id="footer">
       <div class="container">
@@ -100,9 +125,9 @@
             <h5>Quick Links</h5>
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="./sign-up.html">Appointment</a></li>
+              <li><a href="./signUp.html">Appointment</a></li>
               <li><a href="#services">Service</a></li>
-              <li><a href="./about_us.html">About Us</a></li>
+              <li><a href="./aboutUs.html">About Us</a></li>
               <li><a href="#message">Contact Us</a></li>
             </ul>
           </div>
